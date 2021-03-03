@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{8AF2F7B7-1012-4EF9-ABCD-EAE940A71CCF}" SchemaVersion="97">
+	<GameParameters>
+		<WorkUnit Name="Raph_WorkUnit" ID="{8AF2F7B7-1012-4EF9-ABCD-EAE940A71CCF}" PersistMode="Standalone"/>
+	</GameParameters>
+</WwiseDocument>
