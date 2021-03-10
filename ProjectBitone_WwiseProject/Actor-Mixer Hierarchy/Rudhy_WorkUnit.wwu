@@ -1,6 +1,388 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{0817BAD0-0478-4F7C-9EFB-C7C0D77FC8FF}" SchemaVersion="97">
 	<AudioObjects>
-		<WorkUnit Name="Rudhy_WorkUnit" ID="{0817BAD0-0478-4F7C-9EFB-C7C0D77FC8FF}" PersistMode="Standalone"/>
+		<WorkUnit Name="Rudhy_WorkUnit" ID="{0817BAD0-0478-4F7C-9EFB-C7C0D77FC8FF}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="MainMixer" ID="{59D2F7BA-785C-4C54-85F9-7B214166433D}" ShortID="807361073">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{836E5791-EB4E-492E-9DA5-9B9069130A81}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7252F7BC-73B2-4A1E-ACDE-57082587E49A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Folder Name="GrappleHook" ID="{1681D364-9DDA-438A-9CC3-D7E2486A2D39}" ShortID="300789114">
+							<ChildrenList>
+								<Folder Name="Device" ID="{5CCB74C3-AB5E-4447-8BEF-B1EBB57FC620}" ShortID="410309523">
+									<ChildrenList>
+										<Sound Name="Hook_End_SFX" ID="{8A65B558-24C9-48BD-9A10-6EF3489268ED}" ShortID="324396260">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{836E5791-EB4E-492E-9DA5-9B9069130A81}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7252F7BC-73B2-4A1E-ACDE-57082587E49A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="hook_end" ID="{47EF1F94-75D4-4686-9BB1-94D4648E13A8}">
+													<Language>SFX</Language>
+													<AudioFile>hook_end.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="880777740"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="hook_end" ID="{47EF1F94-75D4-4686-9BB1-94D4648E13A8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Hook_Start_SFX" ID="{A68044D2-AAD8-4B02-88F1-B62A7709DCF2}" ShortID="367700718">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{836E5791-EB4E-492E-9DA5-9B9069130A81}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7252F7BC-73B2-4A1E-ACDE-57082587E49A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="hook_start" ID="{F279DEBF-AC46-4904-AEE1-31B3EE1D56CF}">
+													<Language>SFX</Language>
+													<AudioFile>hook_start.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="363156146"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="hook_start" ID="{F279DEBF-AC46-4904-AEE1-31B3EE1D56CF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="Movement" ID="{61DF4F46-C67B-46B1-8B66-4FE811430A88}" ShortID="57602">
+									<ChildrenList>
+										<Sound Name="Whoosh_End" ID="{061F8C7C-21BD-4E93-B5FF-0E4C7E41E733}" ShortID="823555092">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{836E5791-EB4E-492E-9DA5-9B9069130A81}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7252F7BC-73B2-4A1E-ACDE-57082587E49A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Whoosh_End" ID="{45B0F1CC-B1FD-4994-9F88-AF44DFD2D624}">
+													<Language>SFX</Language>
+													<AudioFile>Whoosh_End.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="505384253"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Whoosh_End" ID="{45B0F1CC-B1FD-4994-9F88-AF44DFD2D624}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<RandomSequenceContainer Name="Whoosh_Sequence" ID="{4A37B3AD-3A7F-44CE-8805-562B85E694D5}" ShortID="454997206">
+											<PropertyList>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{836E5791-EB4E-492E-9DA5-9B9069130A81}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7252F7BC-73B2-4A1E-ACDE-57082587E49A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Whoosh_Start" ID="{0B375FF6-61B2-4CFF-8BA4-6FE707E6F712}" ShortID="418899794">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{836E5791-EB4E-492E-9DA5-9B9069130A81}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7252F7BC-73B2-4A1E-ACDE-57082587E49A}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Whoosh_Start" ID="{A9C682C5-D4C1-42D4-8C14-F42136660233}">
+															<Language>SFX</Language>
+															<AudioFile>Whoosh_Start.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="878165768"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Whoosh_Start" ID="{A9C682C5-D4C1-42D4-8C14-F42136660233}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Whoosh_Loop" ID="{5FF2612E-63E7-4D56-8D2B-A437083F7092}" ShortID="432460333">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{836E5791-EB4E-492E-9DA5-9B9069130A81}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7252F7BC-73B2-4A1E-ACDE-57082587E49A}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Whoosh_Loop" ID="{1E8B56CE-668D-416D-AC2A-DB1BA1B7FE8D}">
+															<Language>SFX</Language>
+															<AudioFile>Whoosh_Loop.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="856564177"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Whoosh_Loop" ID="{1E8B56CE-668D-416D-AC2A-DB1BA1B7FE8D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<Playlist>
+												<ItemRef Name="Whoosh_Start" ID="{0B375FF6-61B2-4CFF-8BA4-6FE707E6F712}"/>
+												<ItemRef Name="Whoosh_Loop" ID="{5FF2612E-63E7-4D56-8D2B-A437083F7092}"/>
+											</Playlist>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</Folder>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="FlashLight" ID="{FCA37C05-0DA6-4F6C-B0F9-6EB13F4C7061}" ShortID="723237705">
+							<ChildrenList>
+								<RandomSequenceContainer Name="FlashLight_Rnd" ID="{DB7CA5A7-1430-4F8F-A894-8189C469985F}" ShortID="558463300">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{836E5791-EB4E-492E-9DA5-9B9069130A81}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7252F7BC-73B2-4A1E-ACDE-57082587E49A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="FlashLightSwitch_1" ID="{77A35194-9CAD-4770-8467-31F4F43AE27D}" ShortID="1032777400">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{836E5791-EB4E-492E-9DA5-9B9069130A81}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7252F7BC-73B2-4A1E-ACDE-57082587E49A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FlashLightSwitch_1" ID="{768903C2-A06D-4B7F-A8C6-8914543C78D3}">
+													<Language>SFX</Language>
+													<AudioFile>FlashLightSwitch_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="894537092"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FlashLightSwitch_1" ID="{768903C2-A06D-4B7F-A8C6-8914543C78D3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FlashLightSwitch_2" ID="{C0FCFCD5-7877-4C20-A2D1-058CC53EFBCD}" ShortID="536807947">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{836E5791-EB4E-492E-9DA5-9B9069130A81}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7252F7BC-73B2-4A1E-ACDE-57082587E49A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FlashLightSwitch_2" ID="{67FE3EA4-4627-475A-A6C0-63FC77321DCB}">
+													<Language>SFX</Language>
+													<AudioFile>FlashLightSwitch_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="727602800"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FlashLightSwitch_2" ID="{67FE3EA4-4627-475A-A6C0-63FC77321DCB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FlashLightSwitch_3" ID="{EE87F3ED-E0F2-4385-90BB-52F1F57C481C}" ShortID="198351161">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{836E5791-EB4E-492E-9DA5-9B9069130A81}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7252F7BC-73B2-4A1E-ACDE-57082587E49A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FlashLightSwitch_3" ID="{EF751459-2CFE-405B-8521-94BF953B0C2E}">
+													<Language>SFX</Language>
+													<AudioFile>FlashLightSwitch_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="424469025"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FlashLightSwitch_3" ID="{EF751459-2CFE-405B-8521-94BF953B0C2E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FlashLightSwitch_4" ID="{50FF6B91-EFD4-471A-9014-88FB5D46B3AF}" ShortID="743488796">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{836E5791-EB4E-492E-9DA5-9B9069130A81}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7252F7BC-73B2-4A1E-ACDE-57082587E49A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FlashLightSwitch_4" ID="{A7566236-D1C5-4498-B7B5-31752A3CC231}">
+													<Language>SFX</Language>
+													<AudioFile>FlashLightSwitch_4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="443102193"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FlashLightSwitch_4" ID="{A7566236-D1C5-4498-B7B5-31752A3CC231}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FlashLightSwitch_5" ID="{9C00A14C-CA7F-44A4-B525-C5783652D140}" ShortID="313658846">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{836E5791-EB4E-492E-9DA5-9B9069130A81}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7252F7BC-73B2-4A1E-ACDE-57082587E49A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FlashLightSwitch_5" ID="{9A8B6330-EFA6-4CC5-BBB6-C6E3BEF72AA8}">
+													<Language>SFX</Language>
+													<AudioFile>FlashLightSwitch_5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="731424606"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FlashLightSwitch_5" ID="{9A8B6330-EFA6-4CC5-BBB6-C6E3BEF72AA8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FlashLightSwitch_6" ID="{7C038669-C538-4630-B015-D58F8B13EC56}" ShortID="886773803">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{836E5791-EB4E-492E-9DA5-9B9069130A81}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7252F7BC-73B2-4A1E-ACDE-57082587E49A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FlashLightSwitch_6" ID="{F7B61DEE-997B-4B3C-A8EF-0466E59D9019}">
+													<Language>SFX</Language>
+													<AudioFile>FlashLightSwitch_6.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="631311000"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FlashLightSwitch_6" ID="{F7B61DEE-997B-4B3C-A8EF-0466E59D9019}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FlashLightSwitch_7" ID="{DA6C49C0-1D06-457A-A533-71A7B0DF2E54}" ShortID="194522190">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{836E5791-EB4E-492E-9DA5-9B9069130A81}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7252F7BC-73B2-4A1E-ACDE-57082587E49A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FlashLightSwitch_7" ID="{1BECC76A-5CBC-4C56-B954-EB316F4B84DD}">
+													<Language>SFX</Language>
+													<AudioFile>FlashLightSwitch_7.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="14783113"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FlashLightSwitch_7" ID="{1BECC76A-5CBC-4C56-B954-EB316F4B84DD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Swatch" ID="{563180CD-DC01-40A1-8572-11E677952EFA}" ShortID="465078926">
+							<ChildrenList>
+								<Sound Name="SwatchBeep" ID="{26D9755B-47B2-402E-B8CD-4CFDE156AA32}" ShortID="878753736">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{836E5791-EB4E-492E-9DA5-9B9069130A81}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7252F7BC-73B2-4A1E-ACDE-57082587E49A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SwatchBeep" ID="{2E5AADF6-9FAE-4573-B87B-153195F68F8E}">
+											<Language>SFX</Language>
+											<AudioFile>SwatchBeep.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="552815276"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SwatchBeep" ID="{2E5AADF6-9FAE-4573-B87B-153195F68F8E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="MetalGate" ID="{DADE9CD5-57DC-4FE0-B286-C56DDB430BE8}" ShortID="955893853">
+							<ChildrenList>
+								<Sound Name="MetalGate" ID="{171AB09D-FA25-4CB6-B722-913CCE785715}" ShortID="519065131">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{836E5791-EB4E-492E-9DA5-9B9069130A81}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7252F7BC-73B2-4A1E-ACDE-57082587E49A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MetalGate" ID="{48AEDC1A-3285-4C5F-9B43-73539C1C0B4E}">
+											<Language>SFX</Language>
+											<AudioFile>MetalGate.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="331159247"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MetalGate" ID="{48AEDC1A-3285-4C5F-9B43-73539C1C0B4E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

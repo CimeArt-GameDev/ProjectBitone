@@ -1,6 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{C3E17900-5C8D-4FA9-B68B-B38DB298D2A5}" SchemaVersion="97">
 	<Events>
-		<WorkUnit Name="Rudhy_WorkUnit" ID="{C3E17900-5C8D-4FA9-B68B-B38DB298D2A5}" PersistMode="Standalone"/>
+		<WorkUnit Name="Rudhy_WorkUnit" ID="{C3E17900-5C8D-4FA9-B68B-B38DB298D2A5}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="GrappleHook" ID="{869B53AC-0DB5-4771-9AC5-39A253E8645C}" ShortID="443164116">
+					<ChildrenList>
+						<Folder Name="Device" ID="{66C75F4B-96E5-4BFD-94ED-32E3ABFA6DCB}" ShortID="315318528">
+							<ChildrenList>
+								<Event Name="Play_Hook_End_SFX" ID="{BF843DDB-4A96-4C48-91D7-32F7340A4E9C}">
+									<ChildrenList>
+										<Action Name="" ID="{647B2247-661A-4E63-8200-480E2627AE19}" ShortID="612656693">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Hook_End_SFX" ID="{8A65B558-24C9-48BD-9A10-6EF3489268ED}" WorkUnitID="{0817BAD0-0478-4F7C-9EFB-C7C0D77FC8FF}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Hook_Start_SFX" ID="{F913167F-D1B9-477E-BBE2-2BFE7D31B625}">
+									<ChildrenList>
+										<Action Name="" ID="{7EC948B5-764B-4BD6-A73D-462DFA656575}" ShortID="509526691">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Hook_Start_SFX" ID="{A68044D2-AAD8-4B02-88F1-B62A7709DCF2}" WorkUnitID="{0817BAD0-0478-4F7C-9EFB-C7C0D77FC8FF}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Movement" ID="{82E7CE17-35B0-4109-BADD-5BA35F694924}" ShortID="779208598">
+							<ChildrenList>
+								<Event Name="Play_Whoosh_Sequence" ID="{64FB4F9D-EE21-4E8C-8F1B-379431B635A1}">
+									<ChildrenList>
+										<Action Name="" ID="{F3DB3B39-CE7D-45FE-9BE1-BB19C9A957D5}" ShortID="954151796">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Whoosh_Sequence" ID="{4A37B3AD-3A7F-44CE-8805-562B85E694D5}" WorkUnitID="{0817BAD0-0478-4F7C-9EFB-C7C0D77FC8FF}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stop_Whoosh" ID="{115D5832-8972-4DD7-8590-5DCCEE56A6D9}">
+									<ChildrenList>
+										<Action Name="" ID="{FB1C98B2-9C70-4CE8-B4C2-431FAF4E6F6E}" ShortID="848654016">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Whoosh_End" ID="{061F8C7C-21BD-4E93-B5FF-0E4C7E41E733}" WorkUnitID="{0817BAD0-0478-4F7C-9EFB-C7C0D77FC8FF}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{24362624-F8ED-4935-BDC1-875D636504C8}" ShortID="50727946">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Whoosh_Sequence" ID="{4A37B3AD-3A7F-44CE-8805-562B85E694D5}" WorkUnitID="{0817BAD0-0478-4F7C-9EFB-C7C0D77FC8FF}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Swatch" ID="{8121B994-45B3-40BA-B88F-59B185DF2418}" ShortID="939292915">
+					<ChildrenList>
+						<Event Name="Play_SwatchBeep" ID="{B21722BE-63C0-410B-8F38-DDDDD2A5E3B6}">
+							<ChildrenList>
+								<Action Name="" ID="{CCE34CEC-995E-4A1F-AB33-C234851430BD}" ShortID="166054023">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SwatchBeep" ID="{26D9755B-47B2-402E-B8CD-4CFDE156AA32}" WorkUnitID="{0817BAD0-0478-4F7C-9EFB-C7C0D77FC8FF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="FlashLight" ID="{B4588135-52CA-4CCA-AFDE-0E695B0FEEBA}" ShortID="80220110">
+					<ChildrenList>
+						<Event Name="Play_FlashLight_Rnd" ID="{E82F44A0-20D0-49C1-ADAA-713982A69449}">
+							<ChildrenList>
+								<Action Name="" ID="{1936E012-D2AB-4F8C-9869-E914B11D4025}" ShortID="779678262">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FlashLight_Rnd" ID="{DB7CA5A7-1430-4F8F-A894-8189C469985F}" WorkUnitID="{0817BAD0-0478-4F7C-9EFB-C7C0D77FC8FF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="MetalGate" ID="{CC5C8944-B9AB-4B22-BCF5-1E7E22D3555B}" ShortID="236395814">
+					<ChildrenList>
+						<Event Name="Play_MetalGate" ID="{014891F2-F6DE-4D8B-99DC-5BB37FA666CC}">
+							<ChildrenList>
+								<Action Name="" ID="{619E79C9-2BCA-4027-AC5A-D7E8FA4A7D82}" ShortID="12333637">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MetalGate" ID="{171AB09D-FA25-4CB6-B722-913CCE785715}" WorkUnitID="{0817BAD0-0478-4F7C-9EFB-C7C0D77FC8FF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

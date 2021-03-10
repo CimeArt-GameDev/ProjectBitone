@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{2F1F2526-E87C-4518-99F6-313CF320A3FC}" SchemaVersion="97">
 	<SoundcasterSessions>
-		<WorkUnit Name="Rudhy_WorkUnit" ID="{2F1F2526-E87C-4518-99F6-313CF320A3FC}" PersistMode="Standalone"/>
+		<WorkUnit Name="Rudhy_WorkUnit" ID="{2F1F2526-E87C-4518-99F6-313CF320A3FC}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Rudhy Soundcaster Session" ID="{F098271C-F7CE-4AD7-91C7-687B8E54BCE2}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_Whoosh_Sequence" ID="{64FB4F9D-EE21-4E8C-8F1B-379431B635A1}" WorkUnitID="{C3E17900-5C8D-4FA9-B68B-B38DB298D2A5}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_Whoosh" ID="{115D5832-8972-4DD7-8590-5DCCEE56A6D9}" WorkUnitID="{C3E17900-5C8D-4FA9-B68B-B38DB298D2A5}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>
