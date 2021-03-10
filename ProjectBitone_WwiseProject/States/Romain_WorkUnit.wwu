@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{774D5389-06D7-4521-BE03-5BCE624E42A3}" SchemaVersion="97">
 	<States>
-		<WorkUnit Name="Romain_WorkUnit" ID="{774D5389-06D7-4521-BE03-5BCE624E42A3}" PersistMode="Standalone"/>
+		<WorkUnit Name="Romain_WorkUnit" ID="{774D5389-06D7-4521-BE03-5BCE624E42A3}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Oxygen_STATE" ID="{7FEE9AC3-12B9-4078-9906-4ED487EC0FFB}">
+					<ChildrenList>
+						<State Name="None" ID="{18732193-F86A-4B31-99B1-B79DA9028BF5}"/>
+						<State Name="Suffocate" ID="{7E76C640-FD0B-4CBC-9CCC-11D143CBA2B9}"/>
+						<State Name="Respiration" ID="{F0769D70-9D5B-499C-8E9F-049095A3DBA2}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="Respiration" ID="{F0769D70-9D5B-499C-8E9F-049095A3DBA2}"/>
+							<EndState Name="Suffocate" ID="{7E76C640-FD0B-4CBC-9CCC-11D143CBA2B9}"/>
+							<Time>1</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>
