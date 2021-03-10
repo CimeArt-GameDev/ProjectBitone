@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{8AF2F7B7-1012-4EF9-ABCD-EAE940A71CCF}" SchemaVersion="97">
 	<GameParameters>
-		<WorkUnit Name="Raph_WorkUnit" ID="{8AF2F7B7-1012-4EF9-ABCD-EAE940A71CCF}" PersistMode="Standalone"/>
+		<WorkUnit Name="Raph_WorkUnit" ID="{8AF2F7B7-1012-4EF9-ABCD-EAE940A71CCF}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="EtatCoffre" ID="{FDA826FF-A248-4D1C-86EF-2D7D79C7A379}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{CE4BCEC6-CF42-4BF3-AB86-74BBE9D6EB90}" SchemaVersion="97">
 	<SoundcasterSessions>
-		<WorkUnit Name="Raph_WorkUnit" ID="{CE4BCEC6-CF42-4BF3-AB86-74BBE9D6EB90}" PersistMode="Standalone"/>
+		<WorkUnit Name="Raph_WorkUnit" ID="{CE4BCEC6-CF42-4BF3-AB86-74BBE9D6EB90}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Sc_Raph" ID="{473BAE6E-B4E8-4357-8D78-5BE7833EC874}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="OpenChest_event" ID="{626431D9-C356-49E2-B006-868F9BDE295E}" WorkUnitID="{28F66D7D-DA6F-446A-B9A9-991B94AE96B2}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="EtatCoffre" ID="{FDA826FF-A248-4D1C-86EF-2D7D79C7A379}"/>
+							<Value>1</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>
