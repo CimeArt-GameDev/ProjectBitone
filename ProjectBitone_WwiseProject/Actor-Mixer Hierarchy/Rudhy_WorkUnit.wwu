@@ -144,8 +144,21 @@
 											<ChildrenList>
 												<RandomSequenceContainer Name="Whoosh_Sequence" ID="{4A37B3AD-3A7F-44CE-8805-562B85E694D5}" ShortID="454997206">
 													<PropertyList>
+														<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+														<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+														<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
 														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+														<Property Name="UseMaxSoundPerInstance" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
@@ -431,6 +444,16 @@
 								<ActorMixer Name="Swatch_Mixer" ID="{C1BA88A3-F873-4398-A309-CE72F7654A39}" ShortID="705544098">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>50</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>50</Value>
+											</ValueList>
+										</Property>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
@@ -494,6 +517,20 @@
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="SwatchBeep" ID="{26D9755B-47B2-402E-B8CD-4CFDE156AA32}" ShortID="878753736">
+											<PropertyList>
+												<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{836E5791-EB4E-492E-9DA5-9B9069130A81}"/>

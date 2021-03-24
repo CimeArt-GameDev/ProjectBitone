@@ -24,6 +24,13 @@
 					<ChildrenList>
 						<RandomSequenceContainer Name="Oxygen_SEQ" ID="{1443089E-3175-4881-8460-23C42D6CE692}" ShortID="835658204">
 							<PropertyList>
+								<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>
@@ -31,6 +38,7 @@
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
 								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="1.8">
@@ -46,6 +54,11 @@
 								</Property>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -72,7 +85,7 @@
 											</ModifierList>
 										</Property>
 										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
 										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="4"/>
 										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
@@ -221,7 +234,6 @@
 												<CustomState Name="" ID="{B762F7FC-2B7F-4683-87E0-7A41B488E168}" ShortID="37008764">
 													<PropertyList>
 														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="-0.5"/>
-														<Property Name="Volume" Type="Real64" Value="6"/>
 													</PropertyList>
 												</CustomState>
 											</CustomState>
@@ -248,7 +260,6 @@
 											<PropertyList>
 												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
 												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="3"/>
-												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 												<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
 											</PropertyList>
 											<ReferenceList>
@@ -296,7 +307,7 @@
 															<Language>SFX</Language>
 															<AudioFile>bubbles_04.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="967810164"/>
+																<MediaID ID="10758967"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -318,7 +329,7 @@
 															<Language>SFX</Language>
 															<AudioFile>bubbles_05.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="1024975898"/>
+																<MediaID ID="387298220"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -340,7 +351,7 @@
 															<Language>SFX</Language>
 															<AudioFile>bubbles_07.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="645575465"/>
+																<MediaID ID="80274330"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -601,7 +612,7 @@
 															<Language>SFX</Language>
 															<AudioFile>bubbles_12.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="292115721"/>
+																<MediaID ID="55491924"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -718,6 +729,23 @@
 									</GroupingInfo>
 								</SwitchContainer>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Oxygen_STATE" ID="{7FEE9AC3-12B9-4078-9906-4ED487EC0FFB}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Respiration" ID="{F0769D70-9D5B-499C-8E9F-049095A3DBA2}"/>
+										<CustomState Name="" ID="{8A7F62F2-133B-44EA-BBDC-39A88F4BB91A}" ShortID="858731623"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Suffocate" ID="{7E76C640-FD0B-4CBC-9CCC-11D143CBA2B9}"/>
+										<CustomState Name="" ID="{75E6BFBB-A8DE-4E9D-B620-B70745729A96}" ShortID="528565021"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<Playlist>
 								<ItemRef Name="Oxygen_RAND" ID="{B4F25FE4-4E6F-41BE-AC38-77B174C5B08D}"/>
 								<ItemRef Name="Oxygen_Bubble_SWITCH" ID="{A623A033-6B53-42D7-98FC-25DE9EA33503}"/>
