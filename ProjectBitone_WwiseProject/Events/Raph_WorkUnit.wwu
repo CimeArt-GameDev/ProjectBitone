@@ -14,6 +14,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Grab" ID="{05DE263B-E68D-4D9E-9D77-B8CD71BB1343}">
+					<ChildrenList>
+						<Action Name="" ID="{756B1876-784E-4E17-B863-F5DAE1322CDA}" ShortID="778409649">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="zapsplat_foley_cool_bag_fabric_grab_with_hand_001_26942" ID="{A68F4DA6-48AB-4A04-AFFB-9AE1AC4F4C93}" WorkUnitID="{ECDAE390-EDE4-4521-950C-9C0071504010}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

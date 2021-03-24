@@ -5,22 +5,7 @@
 			<ChildrenList>
 				<Folder Name="Grab" ID="{CC47944B-5F93-42D8-8F61-DB9E87B44FA4}" ShortID="641758085">
 					<ChildrenList>
-						<Sound Name="zapsplat_foley_cool_bag_fabric_grab_with_hand_001_26942" ID="{A68F4DA6-48AB-4A04-AFFB-9AE1AC4F4C93}" ShortID="930652958">
-							<PropertyList>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{90C8A112-1943-4EF6-B216-5791332F61D0}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="700"/>
-													<Property Name="Min" Type="Real64" Value="-700"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-							</PropertyList>
+						<ActorMixer Name="Grab_Mixer" ID="{59937265-A3FA-4BE1-97AB-9AD1A6305A43}" ShortID="774762604">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{836E5791-EB4E-492E-9DA5-9B9069130A81}"/>
@@ -30,18 +15,45 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="zapsplat_foley_cool_bag_fabric_grab_with_hand_001_26942" ID="{DA001CB6-AEC2-4992-8C5B-6909890BD177}">
-									<Language>SFX</Language>
-									<AudioFile>zapsplat_foley_cool_bag_fabric_grab_with_hand_001_26942.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="440496037"/>
-									</MediaIDList>
-								</AudioFileSource>
+								<Sound Name="zapsplat_foley_cool_bag_fabric_grab_with_hand_001_26942" ID="{A68F4DA6-48AB-4A04-AFFB-9AE1AC4F4C93}" ShortID="930652958">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{90C8A112-1943-4EF6-B216-5791332F61D0}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="700"/>
+															<Property Name="Min" Type="Real64" Value="-700"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{836E5791-EB4E-492E-9DA5-9B9069130A81}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7252F7BC-73B2-4A1E-ACDE-57082587E49A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="zapsplat_foley_cool_bag_fabric_grab_with_hand_001_26942" ID="{DA001CB6-AEC2-4992-8C5B-6909890BD177}">
+											<Language>SFX</Language>
+											<AudioFile>zapsplat_foley_cool_bag_fabric_grab_with_hand_001_26942.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="440496037"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="zapsplat_foley_cool_bag_fabric_grab_with_hand_001_26942" ID="{DA001CB6-AEC2-4992-8C5B-6909890BD177}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="zapsplat_foley_cool_bag_fabric_grab_with_hand_001_26942" ID="{DA001CB6-AEC2-4992-8C5B-6909890BD177}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
+						</ActorMixer>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Chest" ID="{055FF7CF-1738-4044-85F7-C40A0C6CCCF5}" ShortID="385480278">
@@ -180,7 +192,7 @@
 																	<Language>SFX</Language>
 																	<AudioFile>bubbles_01.wav</AudioFile>
 																	<MediaIDList>
-																		<MediaID ID="703838949"/>
+																		<MediaID ID="60488857"/>
 																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
@@ -202,7 +214,7 @@
 																	<Language>SFX</Language>
 																	<AudioFile>bubbles_02.wav</AudioFile>
 																	<MediaIDList>
-																		<MediaID ID="363484762"/>
+																		<MediaID ID="64720290"/>
 																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
@@ -224,7 +236,7 @@
 																	<Language>SFX</Language>
 																	<AudioFile>bubbles_03.wav</AudioFile>
 																	<MediaIDList>
-																		<MediaID ID="970225309"/>
+																		<MediaID ID="634446068"/>
 																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
@@ -290,7 +302,7 @@
 																	<Language>SFX</Language>
 																	<AudioFile>bubbles_06.wav</AudioFile>
 																	<MediaIDList>
-																		<MediaID ID="868529176"/>
+																		<MediaID ID="199092918"/>
 																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
@@ -334,7 +346,7 @@
 																	<Language>SFX</Language>
 																	<AudioFile>bubbles_08.wav</AudioFile>
 																	<MediaIDList>
-																		<MediaID ID="935321158"/>
+																		<MediaID ID="299104292"/>
 																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
@@ -356,7 +368,7 @@
 																	<Language>SFX</Language>
 																	<AudioFile>bubbles_09.wav</AudioFile>
 																	<MediaIDList>
-																		<MediaID ID="206832318"/>
+																		<MediaID ID="172455846"/>
 																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
@@ -378,7 +390,7 @@
 																	<Language>SFX</Language>
 																	<AudioFile>bubbles_10.wav</AudioFile>
 																	<MediaIDList>
-																		<MediaID ID="756100124"/>
+																		<MediaID ID="584580028"/>
 																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
@@ -400,7 +412,7 @@
 																	<Language>SFX</Language>
 																	<AudioFile>bubbles_11.wav</AudioFile>
 																	<MediaIDList>
-																		<MediaID ID="393962160"/>
+																		<MediaID ID="257032840"/>
 																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
